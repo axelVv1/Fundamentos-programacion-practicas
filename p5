@@ -1,0 +1,23 @@
+/*
+Inicio
+Leer cantidad
+total ← cantidad * 12
+Escribir total
+Fin
+*/
+
+#include <stdio.h>
+
+int main() {
+    int cantidad;
+    int total;
+
+    printf("Cantidad de cuadernos:\n");
+    scanf("%d", &cantidad);
+
+    total = cantidad * 12;
+
+    printf("Total a pagar: %d Bs\n", total);
+
+    return 0;
+}
