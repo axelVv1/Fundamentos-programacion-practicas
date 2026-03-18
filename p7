@@ -1,0 +1,27 @@
+*/
+Inicio
+Leer nota
+Si nota >= 51 Entonces
+    Escribir "Aprobado"
+Sino
+    Escribir "Reprobado"
+FinSi
+Fin
+/*
+
+#include <stdio.h>
+
+int main() {
+    int nota;
+
+    printf("Ingrese la nota:\n");
+    scanf("%d", &nota);
+
+    if (nota >= 51) {
+        printf("Aprobado\n");
+    } else {
+        printf("Reprobado\n");
+    }
+
+    return 0;
+}
