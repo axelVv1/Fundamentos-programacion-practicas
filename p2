@@ -1,0 +1,22 @@
+/*
+Inicio
+Leer a, b
+suma ← a + b
+Escribir suma
+Fin
+*/
+
+#include <stdio.h>
+
+int main() {
+    int a, b, suma;
+
+    printf("Ingrese dos numeros:\n");
+    scanf("%d %d", &a, &b);
+
+    suma = a + b;
+
+    printf("La suma es: %d\n", suma);
+
+    return 0;
+}
