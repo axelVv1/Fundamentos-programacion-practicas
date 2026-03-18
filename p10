@@ -1,0 +1,34 @@
+/*
+Inicio
+Leer horas, pago
+salario ← horas * pago
+
+Si horas > 40 Entonces
+    salario ← salario + salario * 0.1
+FinSi
+
+Escribir salario
+Fin
+*/
+
+#include <stdio.h>
+
+int main() {
+    float horas, pago, salario;
+
+    printf("Ingrese horas trabajadas:\n");
+    scanf("%f", &horas);
+
+    printf("Ingrese pago por hora:\n");
+    scanf("%f", &pago);
+
+    salario = horas * pago;
+
+    if (horas > 40) {
+        salario = salario + salario * 0.1;
+    }
+
+    printf("Salario total: %.2f\n", salario);
+
+    return 0;
+}
