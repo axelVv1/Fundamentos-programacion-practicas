@@ -1,0 +1,22 @@
+/*
+Inicio
+Leer n1, n2, n3
+prom ← (n1 + n2 + n3) / 3
+Escribir prom
+Fin
+*/
+
+#include <stdio.h>
+
+int main() {
+    float n1, n2, n3, prom;
+
+    printf("Ingrese 3 notas:\n");
+    scanf("%f %f %f", &n1, &n2, &n3);
+
+    prom = (n1 + n2 + n3) / 3;
+
+    printf("El promedio es: %.2f\n", prom);
+
+    return 0;
+}
