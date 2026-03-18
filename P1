@@ -1,0 +1,51 @@
+/*Inicio 
+Definir nombre Como Cadena
+Definir edad Como Entero
+Definir carrera Como Cadena
+Definir semestre Como Entero
+Escribir "Ingrese el nombre completo:"
+    Leer nombre
+Escribir "Ingrese la edad:"
+Leer edad
+Escribir "Ingrese la carrera:"
+Leer carrera
+Escribir "Ingrese el semestre:"
+Leer semestre
+Escribir "----- DATOS DEL ESTUDIANTE -----"
+Escribir "Nombre: ", nombre
+Escribir "Edad: ", edad
+Escribir "Carrera: ", carrera
+Escribir "Semestre: ", semestre
+*/
+
+
+#include <stdio.h>
+
+int main() {
+
+    char nombre[100];
+    int edad;
+    char carrera[100];
+    int semestre;
+
+    printf("Ingrese el nombre completo:\n");
+    fgets(nombre, 100, stdin);
+
+    printf("Ingrese la edad:\n");
+    scanf("%d", &edad);
+    getchar();
+
+    printf("Ingrese la carrera:\n");
+    fgets(carrera, 100, stdin);
+
+    printf("Ingrese el semestre:\n");
+    scanf("%d", &semestre);
+
+    printf("\n----- DATOS DEL ESTUDIANTE -----\n");
+    printf("Nombre: %s", nombre);
+    printf("Edad: %d\n", edad);
+    printf("Carrera: %s", carrera);
+    printf("Semestre: %d\n", semestre);
+
+    return 0;
+}
